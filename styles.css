@@ -31,6 +31,13 @@ section {
     text-align: left; /* Align text to the left */
 }
 
+/* Styling for the image */
+#image img {
+    width: 200px; /* Set the width of the image */
+    float: right; /* Align the image to the right of the page */
+    margin: 0 0 20px 20px; /* Adds some space around the image */
+}
+
 /* Footer styling */
 footer {
     background-color: #333;
