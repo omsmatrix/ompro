@@ -1,9 +1,73 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    margin-left: 20px; /* Adds space from the left */
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left; /* Align header text to the left */
+}
+
+/* Navigation links styling */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none; /* No underline for navigation links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for nav links */
+}
+
+/* Section styling */
+section {
+    margin: 50px 0;
+    text-align: left; /* Align text to the left */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: left; /* Align footer text to the left */
+}
+
+/* Styling for the project links */
+a {
+    color: blue; /* Default color for all links */
+    text-decoration: none; /* Remove underline by default */
+}
+
+a:visited {
+    color: blue; /* Keep the same color for visited links */
+}
+
+a:hover {
+    color: darkblue; /* Change color when hovering over a link */
+    text-decoration: underline; /* Add underline when hovering */
+}
+
+a:active {
+    color: darkblue; /* Color when link is active */
+}
+
+/* Marquee styling (scrolling text) */
 .marquee {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent; /* Remove yellow background */
+    background-color: transparent; /* No background color */
     color: red;
     white-space: nowrap;
     overflow: hidden;
@@ -13,44 +77,11 @@
 
 .marquee p {
     display: inline-block;
-    animation: marquee 5s linear infinite; /* Adjust the time (5 seconds) */
+    animation: marquee 5s linear infinite; /* Adjusted speed */
 }
 
 @keyframes marquee {
-    0%   { transform: translateX(100%); } /* Start off-screen on the right */
-    100% { transform: translateX(-100%); } /* Move completely off-screen to the left */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin-left: 20px; /* Adds a bit of space from the left */
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: left; /* Align header to the left */
-}
-
-section {
-    margin: 50px 0;
-    text-align: left; /* Make sure all sections are left aligned */
-    margin-left: 20px; /* Optional: Adds margin to separate from the left */
-}
-
-h2, p {
-    text-align: left; /* Explicitly align all h2 and p elements to the left */
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: left; /* Align footer text to the left */
+    0%   { transform: translateX(100%); } /* Start from right */
+    100% { transform: translateX(-100%); } /* Move to the left */
 }
 
