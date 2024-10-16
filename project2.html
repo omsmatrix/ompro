@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2</title>
+    <title>Project 2: Conjugate Heat Transfer Coupling</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Project 2: Title</h1>
+        <h1>Project 2: Conjugate Heat Transfer Coupling for Interface Capturing Simulation of Boiling Phenomena</h1>
     </header>
     
     <section>
         <h2>Project Overview</h2>
-        <p>This is the detailed description of Project 2.</p>
+        <p>This project focuses on understanding the complex process of film boiling, which is particularly important for industrial applications such as chemical processing and energy production. To achieve high accuracy in simulations, Conjugate Heat Transfer (CHT) was coupled with a multiphase flow solver.</p>
 
-        <!-- Video Section -->
-        <video controls width="600">
-            <source src="AC_DC_test_1_0_30_90.avi" type="video/avi">
-            Your browser does not support the video tag.
-        </video>
+        <h2>Abstract</h2>
+        <p>The onset of film boiling is a complex and crucial phenomenon, especially for industrial applications like chemical processing and energy production. Very few solvers exist capable of handling large-scale simulations of such complex domains. The massively parallel multiphase CFD flow solver PHASTA, which has been shown to perform well in many multiphase applications, was chosen for this work.</p>
+
+        <p>The objective of this project was to implement CHT capabilities within PHASTA, allowing for effective simulation of heat transfer during film boiling phenomena. My specific role involved integrating a solid conduction solver with OpenMP for parallelization, enabling efficient communication between the solid and fluid solvers. This communication was key for accurately simulating the heat exchange between the two phases (solid and fluid). Additionally, my work involved ensuring that the CHT solver exchanges information with PHASTA's fluid two-phase flow solver in real time, enabling dynamic coupling for high-resolution simulations.</p>
+
+        <p>The project also included contributions from others in developing the Parallel Lattice Algorithm for Interphase Dynamics (PLAID), though my main focus was on enhancing CHT capabilities for PHASTA.</p>
+
+        <h2>My Contributions</h2>
+        <ul>
+            <li>Integrated a solid conduction solver with OpenMP to handle heat conduction in solids.</li>
+            <li>Enabled real-time communication between the CHT solver and PHASTA fluid solver for dynamic heat exchange.</li>
+            <li>Focused on efficient handling of heat flux during film boiling phenomena, with transient heat transfer simulations.</li>
+        </ul>
+
+        <h2>Keywords</h2>
+        <p>Transition Boiling, DNS, Conjugate Heat Transfer, PHASTA, OpenMP</p>
+
+        <h2>Technologies</h2>
+        <p>Fortran, C++, PHASTA, OpenMP</p>
+
+        <footer>
+            <a href="index.html">Back to Home</a>
+        </footer>
     </section>
-
-    <footer>
-        <a href="index.html">Back to Home</a>
-    </footer>
 </body>
 </html>
 

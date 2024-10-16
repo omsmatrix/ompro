@@ -1,21 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    margin-top: 20px;
     background-color: #f4f4f4;
-    text-align: left; /* Change text alignment from center to left */
-    margin-left: 20px; /* Adds some padding from the left side */
+    margin-left: 20px; /* Adds a bit of space from the left */
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: left; /* Align header text to the left */
+    text-align: left; /* Align header to the left */
 }
 
 section {
     margin: 50px 0;
-    text-align: left; /* Ensure all sections have text aligned to the left */
+    text-align: left; /* Make sure all sections are left aligned */
+    margin-left: 20px; /* Optional: Adds margin to separate from the left */
+}
+
+h2, p {
+    text-align: left; /* Explicitly align all h2 and p elements to the left */
 }
 
 footer {
